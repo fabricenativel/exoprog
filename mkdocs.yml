@@ -4,19 +4,18 @@ site_author: Fabrice NATIVEL
 
 docs_dir: docs
 nav:
-  - "<img src='../icones/home.svg' width=16px height=16px>&thinsp; Accueil" :
+  - "<img src='../exoprog/icones/home.svg' width=16px height=16px>&thinsp; Accueil" :
     - index.md
-  - "<img src='../icones/methode.svg' width=16px height=16px>&thinsp; Méthode" :
+  - "<img src='../exoprog/icones/methode.svg' width=16px height=16px>&thinsp; Méthode" :
     - methode.md
-  - "<img src='../icones/circle-check.svg' width=16px height=16px>&thinsp; Exemples résolus" :
+  - "<img src='../exoprog/icones/circle-check.svg' width=16px height=16px>&thinsp; Exemples résolus" :
     - "Somme des positifs": sommepositifs.md
     - "Recherche simple": recherchesimple.md
     - "Indice du maximum": indice_max.md
-  - "<img src='../icones/user-graduate.svg' width=16px height=16px>&thinsp; Exercices en autonomie" :
+  - "<img src='../exoprog/icones/user-graduate.svg' width=16px height=16px>&thinsp; Exercices en autonomie" :
     - "Exemple 1": exo1.md
     - "Exemple 2": exo2.md
     - "Exemple 3": exo3.md
-
 
 theme:
   name: material
