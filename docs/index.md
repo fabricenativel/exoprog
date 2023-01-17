@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+hide: - navigation  in index.md
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Entrainement à la programmation
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+![illustration accueil](./images/programming.svg){: .imgcentre width=400px}
 
-## Project layout
+Ce site propose de s’entraîner à écrire des fonctions en python, en suivant une [méthode](methode.md) en 3 étapes. 
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+
+
+

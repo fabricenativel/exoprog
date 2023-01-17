@@ -1,0 +1,8 @@
+num,enonce,reponseA,reponseB,reponseC,reponseD,bonne_reponse,num_exo,image
+1,"Que renvoie `somme_positifs([5,5]) ?`","0","5","10","Une erreur","C",1,
+2,"Que renvoie `somme_positifs(5) ?`","0","5","10","Une erreur","D",1,
+3,"Que renvoie `somme_positifs([-1,-2,-4]) ?`","-7","0","None","Une erreur","B",1,
+4,"Que renvoie `est_dans([1,2,4],3) ?`","`True`","`False`","`None`","Une erreur","D",2,
+5,"Que renvoie `est_dans(0,[0,0,0]) ?`","`True`","`False`","3","Une erreur","A",2,
+6,"Que renvoie `est_dans(7,[6,-3,1,-2]) ?`","`True`","`False`","0","Une erreur","B",2,
+7,"Que renvoie `indice_max([12,10,15,9,13,11]) ?`","2","15","9","10","A",3,

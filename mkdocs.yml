@@ -1,1 +1,94 @@
-site_name: My Docs
+site_name: Exercices de programmation 
+site_description: Méthode en trois étapes pour s'entraîner à programmer
+site_author: Fabrice NATIVEL
+
+docs_dir: docs
+nav:
+  - "<img src='../icones/home.svg' width=16px height=16px>&thinsp; Accueil" :
+    - index.md
+  - "<img src='../icones/methode.svg' width=16px height=16px>&thinsp; Méthode" :
+    - methode.md
+  - "<img src='../icones/circle-check.svg' width=16px height=16px>&thinsp; Exemples résolus" :
+    - "Somme des positifs": sommepositifs.md
+    - "Recherche simple": recherchesimple.md
+    - "Indice du maximum": indice_max.md
+  - "<img src='../icones/user-graduate.svg' width=16px height=16px>&thinsp; Exercices en autonomie" :
+    - "Exemple 1": exo1.md
+    - "Exemple 2": exo2.md
+    - "Exemple 3": exo3.md
+
+
+theme:
+  name: material
+  favicon: images/favicon.ico
+  icon:
+      logo: fontawesome/solid/dragon 
+  custom_dir: my_theme_customizations/
+  font: false
+  language: fr
+  palette:
+      scheme: default
+  features:
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - content.code.annotate 
+      - navigation.expand
+
+markdown_extensions:
+  - meta
+  - abbr
+  - def_list # Les listes de définition.
+  - attr_list # Un peu de CSS et des attributs HTML.
+  - footnotes # Notes[^1] de bas de page.  [^1]: ma note.
+  - admonition # Blocs colorés  !!! info "ma remarque"
+  - pymdownx.details #   qui peuvent se plier/déplier.
+  - pymdownx.caret # Passage ^^souligné^^ ou en ^exposant^.
+  - pymdownx.mark # Passage ==surligné==.
+  - pymdownx.tilde # Passage ~~barré~~ ou en ~indice~.
+  - pymdownx.highlight # Coloration syntaxique du code
+  - pymdownx.inlinehilite # pour  `#!python  <python en ligne>`
+  - pymdownx.snippets # Inclusion de fichiers externe.
+  - pymdownx.tasklist: # Cases à cocher  - [ ]  et - [x]
+      custom_checkbox: false #   avec cases d'origine
+      clickable_checkbox: true #   et cliquables.
+  - pymdownx.tabbed: # Volets glissants.  === "Mon volet"
+      alternate_style: true
+  - pymdownx.superfences: # Imbrication de blocs.
+      preserve_tabs: true
+  - pymdownx.keys: # Touches du clavier.  ++ctrl+d++
+      separator: "\uff0b"
+  - pymdownx.emoji: # Émojis  :boom:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: ⚓︎
+      toc_depth: 3
+
+extra:
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:prof-bouillot@protonmail.com
+      name: Écrire à l'auteur
+  site_url: https://bouillotvincent.gitlab.io/pyodide-mkdocs/
+  ace_style: # https://ace.c9.io/build/kitchen-sink.html for more customization
+    default: crimson_editor
+    slate: tomorrow_night_bright
+    # slate: tomorrow_night_bright|youtube if your dark mode is youtube
+
+plugins:
+  - search
+  - macros
+
+extra_javascript:
+  #- xtra/javascripts/mathjax-config.js # MathJax
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/fenarius.css
